@@ -34,8 +34,12 @@
     "babel-loader": "^7.0.0",
     "babel-preset-flow": "^7.0.0-alpha.12",
     "cache-loader": "^1.0.3",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "git+ssh://git@github.com/webpack-contrib/extract-text-webpack-plugin.git",
     "flow-bin": "^0.47.0",
     "lerna": "^2.0.0-rc.5",
+    "postcss-modules": "^0.8.0",
+    "style-loader": "^0.18.1",
     "webpack": "git+ssh://git@github.com/webpack/webpack.git#next"
   },
   "dependencies": {

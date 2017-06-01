@@ -1,6 +1,8 @@
+/*/ REQUIRES /*/
 const path = require('path');
 const glob = require('glob');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 /*/ CONFIG /*/
 const config = {
@@ -29,7 +31,7 @@ const config = {
               // provide a cache directory where cache items should be stored
               cacheDirectory: path.resolve('.cache')
             }
-          },
+          },//cache-loader
           'babel-loader'
         ]//use
       },//rule
@@ -39,14 +41,26 @@ const config = {
       //  loader: 'ts-loader'
       //},//rule
 
-      //{
-      //  test: /\.css$/,
-      //  use: ExtractTextPlugin.extract({
-      //    fallback: 'style-loader',
-      //    { loader: 'css-loader', options: { importLoaders: 1 } },
-      //    { loader: 'postcss-loader', options: { sourceMap: true } },
-      //  })//use
-      //},//rule
+      {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                importLoaders: 1
+              }
+            },//css-loader
+            {
+              loader: 'postcss-loader',
+              options: {
+                sourceMap: true
+              }
+            }//postcss-loader
+          ]//use
+        })//use/extracttextplugin
+      }//rule
 
       //{
       //  test: /\.js$/,
@@ -55,7 +69,11 @@ const config = {
       //  exclude: /node_modules/
       //}//rule
     ]//rules
-  }//module
+  },//module
+
+  plugins: [
+    new ExtractTextPlugin('[name].css')
+  ]
 
 };
 
