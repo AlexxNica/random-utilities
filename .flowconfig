@@ -1,7 +1,19 @@
-[ignore]
+[version]
+^0.47.0
 
 [include]
 
 [libs]
 
 [options]
+emoji=true
+module.use_strict=true
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+
+[ignore]
+<PROJECT_ROOT>/node_modules.*
+
+# Ignore Docs
+<PROJECT_ROOT>/docs/.*
+<PROJECT_ROOT>/.*/docs/.*
