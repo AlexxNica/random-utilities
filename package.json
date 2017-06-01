@@ -4,7 +4,9 @@
   "description": "Some random utilities. (nothing interesting for now)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src/ -d dist/",
+    "prepublish": "npm run build",
+    "flow": "flow"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,9 @@
   },
   "homepage": "https://github.com/AlexxNica/random-utilities#readme",
   "devDependencies": {
+    "babel-cli": "^7.0.0-alpha.12",
+    "babel-preset-flow": "^7.0.0-alpha.12",
+    "flow-bin": "^0.47.0",
     "lerna": "^2.0.0-rc.5"
   },
   "dependencies": {
