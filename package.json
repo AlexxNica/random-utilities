@@ -32,15 +32,21 @@
   "devDependencies": {
     "babel-core": "^7.0.0-alpha.12",
     "babel-loader": "^7.0.0",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-preset-env": "^2.0.0-alpha.12",
     "babel-preset-flow": "^7.0.0-alpha.12",
+    "babel-preset-stage-0": "^7.0.0-alpha.12",
+    "browserslist": "^2.1.4",
     "cache-loader": "^1.0.3",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "git+ssh://git@github.com/webpack-contrib/extract-text-webpack-plugin.git",
     "flow-bin": "^0.47.0",
     "lerna": "^2.0.0-rc.5",
+    "lodash-webpack-plugin": "^0.11.4",
     "postcss-modules": "^0.8.0",
     "style-loader": "^0.18.1",
-    "webpack": "git+ssh://git@github.com/webpack/webpack.git#next"
+    "webpack": "git+ssh://git@github.com/webpack/webpack.git#next",
+    "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
     "glob": "^7.1.2",

@@ -1,9 +1,10 @@
 // @flow
 
 import _ from 'lodash';
+import { add } from 'lodash/fp';
 
 function component () {
-  var element = document.createElement('div');
+  const element = document.createElement('div');
 
   element.innerHTML = _.join(['Hello','!'], ' ');
 
@@ -11,3 +12,6 @@ function component () {
 }
 
 document.body.appendChild(component());
+
+const addOne = add(1);
+_.map([1, 2, 3], addOne);

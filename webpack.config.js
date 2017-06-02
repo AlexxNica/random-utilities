@@ -3,6 +3,7 @@ const path = require('path');
 const glob = require('glob');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 /*/ CONFIG /*/
 const config = {
@@ -49,7 +50,8 @@ const config = {
             {
               loader: 'css-loader',
               options: {
-                importLoaders: 1
+                importLoaders: 1,
+                modules: true
               }
             },//css-loader
             {
@@ -72,6 +74,7 @@ const config = {
   },//module
 
   plugins: [
+    new LodashModuleReplacementPlugin,
     new ExtractTextPlugin('[name].css')
   ]
 
