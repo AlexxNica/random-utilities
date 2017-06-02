@@ -1,6 +1,7 @@
 // @flow
 
 import _ from 'lodash';
+// $FlowFixMe
 import { add } from 'lodash/fp';
 
 function component () {
@@ -11,6 +12,7 @@ function component () {
   return element;
 }
 
+// $FlowFixMe
 document.body.appendChild(component());
 
 const addOne = add(1);

@@ -31,6 +31,14 @@ const configPlugins = [
 //  "node_modules/**/*.js"
 //];
 
+/* @TODO: configure properly
+if (process.env.BABEL_ENV === 'development') {
+  envOpts.targets = {
+    node: "current"
+  };
+  envOpts.debug = true;
+};*/
+
 module.exports = {
   //extends: configExtends,
   plugins: configPlugins,
