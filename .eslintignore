@@ -1,0 +1,5 @@
+# Ignore built files.
+build/*
+coverage/*
+vendor/*
+**node_modules**

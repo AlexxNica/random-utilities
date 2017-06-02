@@ -14,8 +14,6 @@ module.exports = {
     "import"
   ],
   settings: {
-    //'import/resolver': {
-      //foo: { someConfig: value }
-    //}
+    //
   }
 };

@@ -17,31 +17,10 @@ const configPresets = [
 
 const configPlugins = [
   "lodash",
-  "transform-flow-strip-types",
-  //["module-resolver", {
-  //  "root": ["./src"],
-  //  "alias": {
-  //    "test": "./test",
-  //    "underscore": "lodash"
-  //  }
-  //}]
+  "transform-flow-strip-types"
 ];
 
-//const configIgnore = [
-//  "node_modules/**/*.js"
-//];
-
-/* @TODO: configure properly
-if (process.env.BABEL_ENV === 'development') {
-  envOpts.targets = {
-    node: "current"
-  };
-  envOpts.debug = true;
-};*/
-
 module.exports = {
-  //extends: configExtends,
   plugins: configPlugins,
-  presets: configPresets,
-  //ignore: configIgnore
+  presets: configPresets
 }
