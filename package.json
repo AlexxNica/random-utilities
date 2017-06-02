@@ -1,12 +1,21 @@
 {
   "name": "random-utilities",
   "version": "1.0.0",
+  "private": true,
   "description": "Some random utilities. (nothing interesting for now)",
+  "engines": {
+    "node": ">=7.0.0",
+    "npm": ">=4.0.0"
+  },
+  "os": [
+    "!win32"
+  ],
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "prepublish": "npm run build",
-    "flow": "flow"
+    "flow": "flow",
+    "eslint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -30,15 +39,28 @@
   },
   "homepage": "https://github.com/AlexxNica/random-utilities#readme",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-core": "^7.0.0-alpha.12",
+    "babel-eslint": "git+ssh://git@github.com/babel/babel-eslint.git",
     "babel-loader": "^7.0.0",
     "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-transform-flow-strip-types": "^7.0.0-alpha.12",
     "babel-preset-env": "^2.0.0-alpha.12",
     "babel-preset-flow": "^7.0.0-alpha.12",
+    "babel-preset-react": "^7.0.0-alpha.12",
     "babel-preset-stage-0": "^7.0.0-alpha.12",
     "browserslist": "^2.1.4",
     "cache-loader": "^1.0.3",
     "css-loader": "^0.28.4",
+    "eslint": "git+ssh://git@github.com/eslint/eslint.git",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-jsx": "git+ssh://git@github.com/feross/eslint-config-standard-jsx.git",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-babel": "git+ssh://git@github.com/babel/eslint-plugin-babel.git",
+    "eslint-plugin-import": "git+ssh://git@github.com/benmosher/eslint-plugin-import.git",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
     "extract-text-webpack-plugin": "git+ssh://git@github.com/webpack-contrib/extract-text-webpack-plugin.git",
     "flow-bin": "^0.47.0",
     "lodash-webpack-plugin": "^0.11.4",

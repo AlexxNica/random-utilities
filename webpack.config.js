@@ -1,3 +1,4 @@
+// @flow
 /*/ REQUIRES /*/
 const path = require('path');
 const glob = require('glob');
@@ -24,13 +25,13 @@ const config = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: [
-          {
+          /*{
             loader: 'cache-loader',
             options: {
               // provide a cache directory where cache items should be stored
               cacheDirectory: path.resolve('.cache')
             }
-          },//cache-loader
+          },*///cache-loader
           'babel-loader'
         ]//use
       },//rule
