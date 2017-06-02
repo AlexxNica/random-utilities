@@ -8,9 +8,7 @@ const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 /*/ CONFIG /*/
 const config = {
   entry: {
-    //babelPolyfill: 'babel-polyfill',
-    main: './src/index.js',
-    //vendors: './src/vendors.js'
+    main: './src/index.js'
   },
   output: {
     filename: '[name].js',
@@ -36,11 +34,6 @@ const config = {
           'babel-loader'
         ]//use
       },//rule
-
-      //{
-      //  test: /\.tsx?$/,
-      //  loader: 'ts-loader'
-      //},//rule
 
       {
         test: /\.css$/,

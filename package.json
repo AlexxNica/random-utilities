@@ -41,7 +41,6 @@
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "git+ssh://git@github.com/webpack-contrib/extract-text-webpack-plugin.git",
     "flow-bin": "^0.47.0",
-    "lerna": "^2.0.0-rc.5",
     "lodash-webpack-plugin": "^0.11.4",
     "postcss-modules": "^0.8.0",
     "style-loader": "^0.18.1",
