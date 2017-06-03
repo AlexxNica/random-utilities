@@ -11,14 +11,14 @@
   },
   "keywords": [
     "random",
-    "utilities",
     "random-utilities",
-    "util",
-    "utils",
-    "utility",
     "random-utility",
-    "helper",
-    "helpers"
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "helpers",
+    "helper"
   ],
   "engines": {
     "node": ">=7.0.0",
