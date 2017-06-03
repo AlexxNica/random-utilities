@@ -59,10 +59,22 @@
     "eslint-config-standard-jsx": "git+ssh://git@github.com/feross/eslint-config-standard-jsx.git",
     "eslint-config-standard-react": "^5.0.0",
     "eslint-plugin-babel": "git+ssh://git@github.com/babel/eslint-plugin-babel.git",
-    "eslint-plugin-import": "git+ssh://git@github.com/benmosher/eslint-plugin-import.git",
+    "eslint-plugin-compat": "^1.0.3",
+    "eslint-plugin-css-modules": "^2.7.1",
+    "eslint-plugin-eslint-comments": "^1.0.1",
+    "eslint-plugin-flowtype": "^2.34.0",
+    "eslint-plugin-html": "git+ssh://git@github.com/benoitzugmeyer/eslint-plugin-html.git#v3",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-jsdoc": "^3.1.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-lodash": "^2.4.2",
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.0.1",
+    "eslint-plugin-security": "git+ssh://git@github.com/nodesecurity/eslint-plugin-security.git",
     "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.3.1",
     "extract-text-webpack-plugin": "git+ssh://git@github.com/webpack-contrib/extract-text-webpack-plugin.git",
     "flow-bin": "^0.47.0",
     "husky": "^0.13.4",
@@ -75,6 +87,8 @@
   "dependencies": {
     "glob": "^7.1.2",
     "lodash": "^4.17.4",
+    "react": "^16.0.0-alpha.12",
+    "react-dom": "^16.0.0-alpha.12",
     "read-pkg": "^2.0.0"
   }
 }
