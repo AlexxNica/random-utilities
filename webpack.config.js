@@ -31,10 +31,10 @@ const config = {
               // provide a cache directory where cache items should be stored
               cacheDirectory: path.resolve('.cache')
             }
-          }, */// cache-loader
+          }, */
           'babel-loader'
-        ]// use
-      }, // rule
+        ]
+      },
 
       {
         test: /\.css$/,
