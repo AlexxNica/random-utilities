@@ -12,7 +12,8 @@ const configPresets = [
   }],
   'stage-0',
   'flow',
-  'react'
+  'react',
+  'jest'
 ];
 
 const configPlugins = [
