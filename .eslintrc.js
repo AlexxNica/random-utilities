@@ -9,7 +9,8 @@ module.exports = {
     "shared-node-browser": true,
     "worker": true,
     "jest": true,
-    "serviceworker": true
+    "serviceworker": true,
+    "es6": true
   },
   "parserOptions": {
     "ecmaVersion": 8,
@@ -58,7 +59,7 @@ module.exports = {
     "eslint-comments/no-unlimited-disable": "error",
     "eslint-comments/no-unused-disable": "error",
     "eslint-comments/no-unused-enable": "error",
-    "eslint-comments/no-use": "error",
+    "eslint-comments/no-use": "error"
   }
   //"settings": {
     //

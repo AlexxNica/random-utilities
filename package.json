@@ -12,6 +12,10 @@
   ],
   "main": "index.js",
   "scripts": {
+    "start:dev": "NODE_ENV=development webpack-dev-server --colors --config webpack/webpack.config.js",
+    "start:prod": "NODE_ENV=production node server",
+    "build:staging": "NODE_ENV=staging webpack --verbose --progress --colors --config webpack/webpack.config.js",
+    "build:prod": "NODE_ENV=production webpack --verbose --progress --colors --config webpack/webpack.config.js",
     "build": "webpack",
     "prepublish": "npm run build",
     "precommit": "npm test",
