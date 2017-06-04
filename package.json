@@ -21,103 +21,88 @@
     "helper"
   ],
   "engines": {
-    "node": ">=7.0.0",
-    "npm": ">=4.0.0"
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
   },
   "os": [
     "!win32"
   ],
   "main": "index.js",
   "scripts": {
-
     "start:dev": "NODE_ENV=development webpack-dev-server --colors --config webpack/webpack.config.js",
-      "start:prod": "NODE_ENV=production node server",
-
+    "start:prod": "NODE_ENV=production node server",
     "build": "webpack",
-      "build:staging": "NODE_ENV=staging webpack --verbose --progress --colors --config webpack/webpack.config.js",
-      "build:prod": "NODE_ENV=production webpack --verbose --progress --colors --config webpack/webpack.config.js",
-
+    "build:staging": "NODE_ENV=staging webpack --verbose --progress --colors --config webpack/webpack.config.js",
+    "build:prod": "NODE_ENV=production webpack --verbose --progress --colors --config webpack/webpack.config.js",
     "prepublish:fix": "npm run build",
-      "precommit:fix": "npm test",
-      "prepush:fix": "npm test",
-
+    "precommit:fix": "npm test",
+    "prepush:fix": "npm test",
     "flow": "flow",
     "eslint": "eslint",
     "test:jest": "jest"
-
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexxNica/random-utilities.git"
   },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(css|less)$": "identity-obj-proxy"
-    },
-    "transform": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/fileTransformer.js"
-    }
-  },
   "devDependencies": {
-
     "babel-cli": "^6.24.1",
-      "babel-core": "^7.0.0-alpha.12",
-      "babel-eslint": "git+ssh://git@github.com/babel/babel-eslint.git",
-      "babel-jest": "^20.0.3",
-      "babel-loader": "^7.0.0",
-      "babel-plugin-lodash": "^3.2.11",
-      "babel-plugin-transform-flow-strip-types": "^7.0.0-alpha.12",
-      "babel-preset-env": "^2.0.0-alpha.12",
-      "babel-preset-flow": "^7.0.0-alpha.12",
-      "babel-preset-jest": "^20.0.3",
-      "babel-preset-react": "^7.0.0-alpha.12",
-      "babel-preset-stage-0": "^7.0.0-alpha.12",
-
-    "eslint": "git+ssh://git@github.com/eslint/eslint.git",
-      "eslint-config-standard": "^10.2.1",
-      "eslint-config-standard-jsx": "git+ssh://git@github.com/feross/eslint-config-standard-jsx.git",
-      "eslint-config-standard-react": "^5.0.0",
-      "eslint-plugin-babel": "git+ssh://git@github.com/babel/eslint-plugin-babel.git",
-      "eslint-plugin-compat": "^1.0.3",
-      "eslint-plugin-css-modules": "^2.7.1",
-      "eslint-plugin-eslint-comments": "^1.0.1",
-      "eslint-plugin-flowtype": "^2.34.0",
-      "eslint-plugin-html": "git+ssh://git@github.com/benoitzugmeyer/eslint-plugin-html.git#v3",
-      "eslint-plugin-import": "^2.3.0",
-      "eslint-plugin-jest": "^20.0.3",
-      "eslint-plugin-jsdoc": "^3.1.0",
-      "eslint-plugin-jsx-a11y": "^5.0.3",
-      "eslint-plugin-lodash": "^2.4.2",
-      "eslint-plugin-node": "^5.0.0",
-      "eslint-plugin-promise": "^3.5.0",
-      "eslint-plugin-react": "^7.0.1",
-      "eslint-plugin-security": "git+ssh://git@github.com/nodesecurity/eslint-plugin-security.git",
-      "eslint-plugin-standard": "^3.0.1",
-      "eslint-plugin-you-dont-need-lodash-underscore": "^6.3.1",
-
-    "webpack": "git+ssh://git@github.com/webpack/webpack.git#next",
-      "extract-text-webpack-plugin": "git+ssh://git@github.com/webpack-contrib/extract-text-webpack-plugin.git",
-      "cache-loader": "^1.0.3",
-      "css-loader": "^0.28.4",
-      "style-loader": "^0.18.1",
-      "lodash-webpack-plugin": "^0.11.4",
-      "webpack-dev-server": "^2.4.5",
-
-    "postcss-modules": "^0.8.0",
+    "babel-core": "^7.0.0-alpha.12",
+    "babel-eslint": "git+ssh://git@github.com/babel/babel-eslint.git",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-dynamic-import-node": "^1.0.2",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-syntax-dynamic-import": "^7.0.0-alpha.12",
+    "babel-plugin-transform-flow-strip-types": "^7.0.0-alpha.12",
+    "babel-preset-env": "^2.0.0-alpha.12",
+    "babel-preset-flow": "^7.0.0-alpha.12",
+    "babel-preset-jest": "^20.0.3",
+    "babel-preset-react": "^7.0.0-alpha.12",
+    "babel-preset-stage-0": "^7.0.0-alpha.12",
     "browserslist": "^2.1.4",
+    "cache-loader": "^1.0.3",
+    "css-loader": "^0.28.4",
+    "eslint": "git+ssh://git@github.com/eslint/eslint.git",
+    "eslint-config-fb-strict": "^20.0.3",
+    "eslint-config-fbjs": "^2.0.0-alpha.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-jsx": "git+ssh://git@github.com/feross/eslint-config-standard-jsx.git",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-babel": "git+ssh://git@github.com/babel/eslint-plugin-babel.git",
+    "eslint-plugin-compat": "^1.0.3",
+    "eslint-plugin-css-modules": "^2.7.1",
+    "eslint-plugin-eslint-comments": "^1.0.1",
+    "eslint-plugin-flowtype": "^2.34.0",
+    "eslint-plugin-header": "^1.0.0",
+    "eslint-plugin-html": "git+ssh://git@github.com/benoitzugmeyer/eslint-plugin-html.git#v3",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-jsdoc": "^3.1.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-lodash": "^2.4.2",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.0.1",
+    "eslint-plugin-security": "git+ssh://git@github.com/nodesecurity/eslint-plugin-security.git",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.3.1",
+    "extract-text-webpack-plugin": "git+ssh://git@github.com/webpack-contrib/extract-text-webpack-plugin.git",
     "flow-bin": "^0.47.0",
     "husky": "^0.13.4",
-    "jest": "^20.0.4"
-
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^20.0.4",
+    "lodash-webpack-plugin": "^0.11.4",
+    "postcss-modules": "^0.8.0",
+    "style-loader": "^0.18.1",
+    "webpack": "git+ssh://git@github.com/webpack/webpack.git#next",
+    "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
-
     "react": "^16.0.0-alpha.12",
-      "react-dom": "^16.0.0-alpha.12",
-
+    "react-dom": "^16.0.0-alpha.12",
     "read-pkg": "^2.0.0",
     "glob": "^7.1.2",
     "lodash": "^4.17.4"
-
   }
 }

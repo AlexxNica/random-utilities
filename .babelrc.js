@@ -8,7 +8,13 @@ const configPresets = [
       'browsers': ['last 2 versions']
     },
     'useBuiltIns': 'usage',
-    'debug': true
+    'debug': true,
+    'test': {
+      'plugins': [
+        'transform-es2015-modules-commonjs',
+        'dynamic-import-node'
+      ]
+    }
   }],
   'stage-0',
   'flow',
@@ -18,7 +24,8 @@ const configPresets = [
 
 const configPlugins = [
   'lodash',
-  'transform-flow-strip-types'
+  'transform-flow-strip-types',
+  'syntax-dynamic-import'
 ];
 
 module.exports = {

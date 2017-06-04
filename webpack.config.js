@@ -1,10 +1,10 @@
 // @flow
 /* REQUIRES */
-const path = require('path')
-// const glob = require('glob')
-// const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const LodashModuleReplacementPlugin = require('lodash-webpack-plugin')
+const path = require('path');
+// const glob = require('glob');
+// const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 /* CONFIG */
 const config = {
@@ -72,7 +72,7 @@ const config = {
     new ExtractTextPlugin('[name].css')
   ]
 
-}
+};
 
 /* EXPORTS */
-module.exports = config
+module.exports = config;
