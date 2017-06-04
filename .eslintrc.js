@@ -60,7 +60,7 @@ module.exports = {
     //'jsdoc'
   ],
   'rules': {
-    'header/header': [2, 'block', 'extra/header.js']
+    'header/header': [2, 'block', 'extra/header-comment-block.js']
     'eslint-comments/disable-enable-pair': 'error',
     'eslint-comments/no-duplicate-disable': 'error',
     'eslint-comments/no-unlimited-disable': 'error',
