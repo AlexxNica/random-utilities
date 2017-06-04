@@ -2,7 +2,7 @@
 
 import _ from 'lodash';
 // $FlowFixMe
-import {add} from 'lodash/fp';
+import { add } from 'lodash/fp';
 import React from 'react';
 import ReactDOM from 'react-dom';
 

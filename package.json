@@ -73,6 +73,7 @@
     "eslint-plugin-compat": "^1.0.3",
     "eslint-plugin-css-modules": "^2.7.1",
     "eslint-plugin-eslint-comments": "^1.0.1",
+    "eslint-plugin-flow-header": "^0.1.1",
     "eslint-plugin-flowtype": "^2.34.0",
     "eslint-plugin-header": "^1.0.0",
     "eslint-plugin-html": "git+ssh://git@github.com/benoitzugmeyer/eslint-plugin-html.git#v3",
